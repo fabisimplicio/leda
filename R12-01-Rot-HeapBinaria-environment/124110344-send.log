@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2025-09-08T10:07:00.725-0300</date>
+  <logger>FABIANA SIMPLICIO DA SILVA</logger>
+  <level>FINE</level>
+  <message>File 124110344-FABIANA SIMPLICIO DA SILVA.zip was received. It was sent by FABIANA SIMPLICIO DA SILVA from IP 192.168.1.104 at 08-09-2025 10*07*00</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2025-09-08T15:54:04.953-0300</date>
+  <logger>FABIANA SIMPLICIO DA SILVA</logger>
+  <level>FINE</level>
+  <message>File 124110344-FABIANA SIMPLICIO DA SILVA.zip was received. It was sent by FABIANA SIMPLICIO DA SILVA from IP 192.168.1.104 at 08-09-2025 15*54*04</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2025-09-09T09:18:53.067-0300</date>
+  <logger>FABIANA SIMPLICIO DA SILVA</logger>
+  <level>FINE</level>
+  <message>File 124110344-FABIANA SIMPLICIO DA SILVA.zip was received. It was sent by FABIANA SIMPLICIO DA SILVA from IP 192.168.49.204 at 09-09-2025 09*18*52</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2025-09-10T08:07:54.642-0300</date>
+  <logger>FABIANA SIMPLICIO DA SILVA</logger>
+  <level>FINE</level>
+  <message>File 124110344-FABIANA SIMPLICIO DA SILVA.zip was received. It was sent by FABIANA SIMPLICIO DA SILVA from IP 192.168.49.204 at 10-09-2025 08*07*54</message>
+</record>

@@ -1,0 +1,61 @@
+// Classe genérica que implementa a interface OrderStatistics para elementos que são comparáveis (T extends Comparable<T>)
+public class OrderStatisticsSelectionImpl<T extends Comparable<T>> implements OrderStatistics<T> {
+
+    // Método principal chamado externamente para encontrar a estatística de ordem k (k-ésimo menor elemento)
+    @Override
+    public T orderStatisticsSelection(T[] array, int k) {
+        // Encontra o índice do menor elemento no array (1ª estatística de ordem)
+        int result = selectMin(array, 0);
+        
+        // Se k > 1, chama recursivamente para buscar o próximo menor maior que o anterior
+        if (k > 1) {
+            result = orderStatisticsSelection(array, k, result);
+        }
+
+        // Retorna o elemento na posição encontrada
+        return array[result];
+    }
+
+    // Método auxiliar recursivo usado para encontrar o índice do k-ésimo menor elemento
+    private int orderStatisticsSelection(T[] array, int k, int current) {
+        int result = current; // índice atual considerado
+
+        // Se ainda não chegou no k-ésimo, continua buscando o próximo menor MAIOR que o atual
+        if (k > 1) {
+            int nextMin = selectMinGreater(array, 0, current); // busca o menor elemento maior que array[current]
+            result = orderStatisticsSelection(array, k - 1, nextMin); // chamada recursiva reduzindo k
+        }
+
+        return result; // retorna o índice encontrado
+    }
+
+    // Método que encontra o índice do menor elemento no array a partir do índice dado
+    public int selectMin(T[] array, int index) {
+        int minIndex = index; // começa assumindo que o menor é o atual
+
+        // Se não estiver no fim do array, continua a busca recursivamente
+        if (index < array.length - 1) {
+            int nextMin = selectMin(array, index + 1); // índice do menor do resto do array
+
+            // Compara se o encontrado é menor que o atual
+            if (array[nextMin].compareTo(array[minIndex]) < 0) {
+                minIndex = nextMin; // atualiza o índice do menor
+            }
+        }
+
+        return minIndex; // retorna o índice do menor valor encontrado
+    }
+
+    // Método que busca o menor elemento MAIOR que o elemento em 'previous'
+    public int selectMinGreater(T[] array, int index, int previous) {
+        int min = index;
+        if (l < r) {
+            int nextMin = selectMinGreater(A, index + 1, min);
+            if (array[nextMin].compareTo(array[min]) < 0 && array[nextMin].compareTo(array[previous]) > 0) {
+                min = nextMin;
+            }
+        }
+        return min;
+    }
+
+}
